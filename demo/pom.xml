@@ -32,10 +32,16 @@
 	</dependency>
 	
     <!-- thymeleaf模版引擎 -->
-     <dependency>
+    <dependency>
 		   <groupId>org.springframework.boot</groupId>
 		   <artifactId>spring-boot-starter-thymeleaf</artifactId>
 	</dependency> 
+	
+	 <!-- freeMarker模版引擎 -->
+    <!--  <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency> -->
    
 </dependencies>
 
