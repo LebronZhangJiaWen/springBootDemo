@@ -2,20 +2,20 @@ package com.example.demo;
 
 import javax.servlet.MultipartConfigElement;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.boot.web.servlet.ServletComponentScan;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication 
-@ServletComponentScan
 //一个注解顶下面3个
 //@SpringBootConfiguration
 //@EnableAutoConfiguration
 //@ComponentScan
+@ServletComponentScan
+@MapperScan("com.example.demo.mapper")
 public class XdclassApplication {
 
 	public static void main(String[] args) {
