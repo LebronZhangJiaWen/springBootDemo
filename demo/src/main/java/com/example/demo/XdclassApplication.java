@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication 
 //一个注解顶下面3个
@@ -16,6 +17,7 @@ import org.springframework.context.annotation.Bean;
 //@ComponentScan
 @ServletComponentScan
 @MapperScan("com.example.demo.mapper")
+@EnableScheduling //开启定时任务，自动扫描
 public class XdclassApplication {
 
 	public static void main(String[] args) {
