@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication 
@@ -17,7 +18,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 //@ComponentScan
 @ServletComponentScan
 @MapperScan("com.example.demo.mapper")
-@EnableScheduling //开启定时任务，自动扫描
+//@EnableScheduling //开启定时任务，自动扫描
+@EnableAsync //扫描异步方法
 public class XdclassApplication {
 
 	public static void main(String[] args) {
