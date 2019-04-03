@@ -51,7 +51,7 @@
     </appender>
    <root level="INFO">  <!-- 日志输出的最低级别 -->
         <appender-ref ref="consoleApp"/>
-        <appender-ref ref="fileInfoApp"/>
-        <appender-ref ref="fileErrorApp"/>
+        <!-- <appender-ref ref="fileInfoApp"/>
+        <appender-ref ref="fileErrorApp"/> -->
     </root>
 </configuration>
