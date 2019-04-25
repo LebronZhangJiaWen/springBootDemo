@@ -1,0 +1,8 @@
+net\demo\controller\FileController.class
+net\demo\XdclassApplication.class
+net\demo\controller\SampleController.class
+net\demo\controller\GetController.class
+net\demo\utill\User.class
+net\demo\utill\JsonData.class
+net\demo\controller\OtherHttpController.class
+net\demo\utill\ServerSettings.class
